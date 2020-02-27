@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <title>Score Board</title>
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">SCORE BOARD</h1>
+    </div>
+    <div class="board">
+        <div class="team1">
+            <div class="nameScore">
+                <div class="name">
+                    <h2>HOME</h2>
+                </div>
+                <div class="score">
+                    <h1 id="res1" class="result">0</h1>
+                </div>
+            </div>
+            <div id="bc1" class="btn-container">
+                <button id="minus" class="btn-func"></button>
+                <button id="plus" class="btn-func"></button>
+                <button id="reset" class="btn-func"></button>
+            </div>
+        </div>
+        <div class="info">
+            <div id="wrap-time">
+                <div id="timer">
+                    <div class="timer-panel">
+                        <h1 id="minute1" class="num">2</h1>
+                    </div>
+                    <div class="timer-panel">
+                        <h1 id="minute2" class="num">0</h1>
+                    </div>
+                    <div class="separator">
+                        <h1 id="separator" class="num">:</h1>
+                    </div>
+                    <div class="timer-panel">
+                        <h1 id="second1" class="num">0</h1>
+                    </div>
+                    <div class="timer-panel">
+                        <h1 id="second2" class="num">0</h1>
+                    </div>
+                </div>
+                <div id="btn-time">
+                    <button id="stop" class="btn-func"></button>
+                    <button id="restart" class="btn-func"></button>
+                </div>
+            </div>
+            <div id="wrap-period">
+                <button id="btn-period1" class="prd-btn-chg"></button>
+                <div id="period-container">
+                    <h1 id="period-text" class="text-period">PERIOD</h1>
+                    <div id="period" class="prd-panel">
+                    <h1 id="period-count" class="text-period">1</h1>
+                    </div>
+                </div>
+                <button id="btn-period2" class="prd-btn-chg"></button>
+            </div>
+        </div>
+        <div class="team2">
+            <div class="nameScore">
+                <div class="name">
+                    <h2>AWAY</h2>
+                </div>
+                <div class="score">
+                    <h1 id="res2" class="result">0</h1>
+                </div>
+            </div>
+            <div id="bc2" class="btn-container">
+                <button id="minus" class="btn-func"></button>
+                <button id="plus" class="btn-func"></button>
+                <button id="reset" class="btn-func"></button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
